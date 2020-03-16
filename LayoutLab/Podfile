@@ -6,7 +6,9 @@ target 'LayoutLab' do
   use_frameworks!
   pod 'GDPerformanceView-Swift', '~> 2.0.3'
   # Pods for LayoutLab
-
+  pod 'FlexLayout'
+  pod 'PinLayout'
+  
   target 'LayoutLabTests' do
     inherit! :search_paths
     # Pods for testing

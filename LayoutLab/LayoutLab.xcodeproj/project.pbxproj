@@ -15,6 +15,9 @@
 		61627472241F2914008B9D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61627471241F2914008B9D69 /* Assets.xcassets */; };
 		61627475241F2914008B9D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61627473241F2914008B9D69 /* LaunchScreen.storyboard */; };
 		61627480241F2914008B9D69 /* LayoutLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162747F241F2914008B9D69 /* LayoutLabTests.swift */; };
+		616274C0241F7FB7008B9D69 /* flexlayout-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 616274BF241F7FB7008B9D69 /* flexlayout-logo.png */; };
+		616274C2241F804B008B9D69 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616274C1241F804B008B9D69 /* IntroView.swift */; };
+		616274C4241F9353008B9D69 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616274C3241F9353008B9D69 /* BaseViewController.swift */; };
 		9BEEFEC394028E5D4DCBA560 /* Pods_LayoutLabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05443A89466652A1CAA4C2 /* Pods_LayoutLabTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		6162747B241F2914008B9D69 /* LayoutLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6162747F241F2914008B9D69 /* LayoutLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutLabTests.swift; sourceTree = "<group>"; };
 		61627481241F2914008B9D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616274BF241F7FB7008B9D69 /* flexlayout-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flexlayout-logo.png"; sourceTree = "<group>"; };
+		616274C1241F804B008B9D69 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		616274C3241F9353008B9D69 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		90CFE71CAE5242A88ADA2A53 /* Pods-LayoutLabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutLabTests.debug.xcconfig"; path = "Target Support Files/Pods-LayoutLabTests/Pods-LayoutLabTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C6F1B0FF14D19847FF6BDD /* Pods-LayoutLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutLabTests.release.xcconfig"; path = "Target Support Files/Pods-LayoutLabTests/Pods-LayoutLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB05443A89466652A1CAA4C2 /* Pods_LayoutLabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutLabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +108,7 @@
 		61627467241F2911008B9D69 /* LayoutLab */ = {
 			isa = PBXGroup;
 			children = (
+				616274BF241F7FB7008B9D69 /* flexlayout-logo.png */,
 				61627468241F2911008B9D69 /* AppDelegate.swift */,
 				6162746A241F2911008B9D69 /* SceneDelegate.swift */,
 				6162746C241F2911008B9D69 /* ViewController.swift */,
@@ -109,6 +116,8 @@
 				61627471241F2914008B9D69 /* Assets.xcassets */,
 				61627473241F2914008B9D69 /* LaunchScreen.storyboard */,
 				61627476241F2914008B9D69 /* Info.plist */,
+				616274C1241F804B008B9D69 /* IntroView.swift */,
+				616274C3241F9353008B9D69 /* BaseViewController.swift */,
 			);
 			path = LayoutLab;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61627475241F2914008B9D69 /* LaunchScreen.storyboard in Resources */,
+				616274C0241F7FB7008B9D69 /* flexlayout-logo.png in Resources */,
 				61627472241F2914008B9D69 /* Assets.xcassets in Resources */,
 				61627470241F2911008B9D69 /* Main.storyboard in Resources */,
 			);
@@ -284,13 +294,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LayoutLab/Pods-LayoutLab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GDPerformanceView-Swift/GDPerformanceView_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDPerformanceView_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616274C4241F9353008B9D69 /* BaseViewController.swift in Sources */,
 				6162746D241F2911008B9D69 /* ViewController.swift in Sources */,
+				616274C2241F804B008B9D69 /* IntroView.swift in Sources */,
 				61627469241F2911008B9D69 /* AppDelegate.swift in Sources */,
 				6162746B241F2911008B9D69 /* SceneDelegate.swift in Sources */,
 			);

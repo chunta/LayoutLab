@@ -8,11 +8,26 @@
 
 import UIKit
 import GDPerformanceView_Swift
+import FlexLayout
+import PinLayout
+
 class ViewController: UIViewController, PerformanceMonitorDelegate {
 
-    @IBOutlet var fpxTxt:UILabel!
+    fileprivate let rootFlexContainer = UIView()
+    
+    var fpxTxt:UILabel!
+    
+    override func loadView() {
+        view = IntroView()
+        
+        fpxTxt = UILabel.init(frame: CGRect(x: 10, y: 450, width: 200, height: 50))
+        view.addSubview(fpxTxt)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
         PerformanceMonitor.shared().start()
         PerformanceMonitor.shared().delegate = self

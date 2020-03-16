@@ -1,16 +1,24 @@
 PODS:
+  - FlexLayout (1.3.17)
   - GDPerformanceView-Swift (2.0.3)
+  - PinLayout (1.8.13)
 
 DEPENDENCIES:
+  - FlexLayout
   - GDPerformanceView-Swift (~> 2.0.3)
+  - PinLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FlexLayout
     - GDPerformanceView-Swift
+    - PinLayout
 
 SPEC CHECKSUMS:
+  FlexLayout: 257b6763526bc957d2abc2b77a05760b86ca0e21
   GDPerformanceView-Swift: ef3d05deb103e472a5494d3f60aeca5a58b88a7d
+  PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc
 
-PODFILE CHECKSUM: e55a250e8db9c626581e26965d660f70d082816a
+PODFILE CHECKSUM: cc542dee939fefd3dba26d46e366b10cf4a03245
 
 COCOAPODS: 1.6.0
