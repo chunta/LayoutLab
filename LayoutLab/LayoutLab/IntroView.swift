@@ -19,6 +19,8 @@ class IntroView: UIView {
         backgroundColor = .white
 
         let imageView = UIImageView(image: UIImage(named: "flexlayout-logo"))
+        let imageView2 = UIImageView(image: UIImage(named: "flexlayout-logo"))
+        let imageView3 = UIImageView(image: UIImage(named: "flexlayout-logo"))
         
         let segmentedControl = UISegmentedControl(items: ["Intro", "FlexLayout", "PinLayout"])
         segmentedControl.selectedSegmentIndex = 0
@@ -32,20 +34,19 @@ class IntroView: UIView {
         bottomLabel.numberOfLines = 0
         
         rootFlexContainer.flex.direction(.column).padding(12).define { (flex) in
-            flex.addItem().direction(.row).define { (flex) in
-                flex.addItem(imageView).width(100).aspectRatio(of: imageView)
-                
-                flex.addItem().direction(.column).paddingLeft(12).grow(1).shrink(1).define { (flex) in
-                    flex.addItem(segmentedControl).marginBottom(12).grow(1)
-                    flex.addItem(label)
-                }
-            }
             
-            flex.addItem().height(1).marginTop(12).backgroundColor(.lightGray)
+
+            flex.addItem().direction(.row).padding(10).define { (flex) in
+                flex.addItem(imageView2).width(100).aspectRatio(of: imageView)
+                flex.addItem(imageView3).width(100).aspectRatio(of: imageView)
+            }
+        
             flex.addItem(bottomLabel).marginTop(12)
         }
         
         addSubview(rootFlexContainer)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182FFBE12421B0C4003E1C8E /* FlexTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FFBE02421B0C4003E1C8E /* FlexTableCell.swift */; };
 		284D57A583B1432F5A22721F /* Pods_LayoutLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB6E20BA6FA000CE7B52765 /* Pods_LayoutLab.framework */; };
 		61627469241F2911008B9D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61627468241F2911008B9D69 /* AppDelegate.swift */; };
 		6162746B241F2911008B9D69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162746A241F2911008B9D69 /* SceneDelegate.swift */; };
@@ -17,7 +18,6 @@
 		61627480241F2914008B9D69 /* LayoutLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6162747F241F2914008B9D69 /* LayoutLabTests.swift */; };
 		616274C0241F7FB7008B9D69 /* flexlayout-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 616274BF241F7FB7008B9D69 /* flexlayout-logo.png */; };
 		616274C2241F804B008B9D69 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616274C1241F804B008B9D69 /* IntroView.swift */; };
-		616274C4241F9353008B9D69 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616274C3241F9353008B9D69 /* BaseViewController.swift */; };
 		9BEEFEC394028E5D4DCBA560 /* Pods_LayoutLabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB05443A89466652A1CAA4C2 /* Pods_LayoutLabTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0E260D09FDD268464D95711C /* Pods-LayoutLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutLab.debug.xcconfig"; path = "Target Support Files/Pods-LayoutLab/Pods-LayoutLab.debug.xcconfig"; sourceTree = "<group>"; };
+		182FFBE02421B0C4003E1C8E /* FlexTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexTableCell.swift; sourceTree = "<group>"; };
 		4FB6E20BA6FA000CE7B52765 /* Pods_LayoutLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61627465241F2911008B9D69 /* LayoutLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61627468241F2911008B9D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		61627481241F2914008B9D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616274BF241F7FB7008B9D69 /* flexlayout-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flexlayout-logo.png"; sourceTree = "<group>"; };
 		616274C1241F804B008B9D69 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
-		616274C3241F9353008B9D69 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		90CFE71CAE5242A88ADA2A53 /* Pods-LayoutLabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutLabTests.debug.xcconfig"; path = "Target Support Files/Pods-LayoutLabTests/Pods-LayoutLabTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C6F1B0FF14D19847FF6BDD /* Pods-LayoutLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutLabTests.release.xcconfig"; path = "Target Support Files/Pods-LayoutLabTests/Pods-LayoutLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB05443A89466652A1CAA4C2 /* Pods_LayoutLabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutLabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +117,7 @@
 				61627473241F2914008B9D69 /* LaunchScreen.storyboard */,
 				61627476241F2914008B9D69 /* Info.plist */,
 				616274C1241F804B008B9D69 /* IntroView.swift */,
-				616274C3241F9353008B9D69 /* BaseViewController.swift */,
+				182FFBE02421B0C4003E1C8E /* FlexTableCell.swift */,
 			);
 			path = LayoutLab;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616274C4241F9353008B9D69 /* BaseViewController.swift in Sources */,
+				182FFBE12421B0C4003E1C8E /* FlexTableCell.swift in Sources */,
 				6162746D241F2911008B9D69 /* ViewController.swift in Sources */,
 				616274C2241F804B008B9D69 /* IntroView.swift in Sources */,
 				61627469241F2911008B9D69 /* AppDelegate.swift in Sources */,
